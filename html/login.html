@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../account.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <img src="/img/background.jpg" alt="" />
+    </div>
+    <div class="signup-box">
+      <div class="account">
+        <div class="signup-box-head">
+          <div class="signup-box-logo">
+            <img src="../img/image.png" alt="" />
+          </div>
+          <span>draWorld</span>
+        </div>
+        <div class="thesign">
+          <p>LOG IN</p>
+        </div>
+        <form id="account-form">
+          <div class="signin-bar">
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
+          <div class="signin-bar">
+            <div class="password-container">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+              <i
+                class="fa-regular fa-eye toggle-password"
+                id="togglePassword"
+              ></i>
+              <!-- <i class="fa-regular fa-eye-slash toggle-password" id="togglePassword"></i> -->
+            </div>
+          </div>
+          <div class="sign-btn">
+            <button type="submit" class="account-submit">
+              <span class="loader"></span>
+              <span class="text-submit">Log in</span>
+            </button>
+          </div>
+          <div class="log">
+            <p>Chưa có tài khoản:</p>
+            <a href="../html/signin.html"> Sign up</a>
+          </div>
+          <div class="or">
+            <p>Hoặc</p>
+          </div>
+          <div class="social_log">
+            <button>
+              <i class="fa-brands fa-google"></i>
+            </button>
+            <button>
+              <i class="fa-brands fa-facebook"></i>
+            </button>
+            <button>
+              <i class="fa-brands fa-apple"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"
+    ></script>
+    <script src="../js/login.js"></script>
+    <script defer src="../js/config.js"></script>
+  </body>
+</html>

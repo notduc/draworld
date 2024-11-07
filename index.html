@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <div class="header-logo">
+          <img src="img/image.png" alt="" />
+        </div>
+        <span>draWorld</span>
+      </div>
+      <ul class="header-navigation">
+        <a id="Up" href="./html/signin.html">Đăng ký</a>
+        <a id="In" href="./html/login.html">Đăng nhập</a>
+        <a id="logOut" href="./html/login.html">Logout</a>
+      </ul>
+      <div class="header-search">
+        <input
+          type="text"
+          name="search-artists"
+          id="search-artists"
+          placeholder="Tìm hoạ sĩ..."
+        />
+        <i class="fas fa-search search-icon"></i>
+      </div>
+    </header>
+    <div class="divide"></div>
+    <section class="slider">
+      <div class="prev"></div>
+      <div class="slider-container">  
+        <div class="slider-item">
+          <img class="mySlides" src="https://resource.xp-pen.com/static/images/20240122/EXeBB5jSzBaHEZTXMDml.webp"> 
+        </div> 
+        <div class="slider-item">
+          <img class="mySlides" src="https://www.xp-pen.com/Uploads/images/product/detail/20170828/20200513/Creative-P3-banner.jpg"> 
+        </div> 
+        <div class="slider-item">
+          <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/1/15/Krita_5.0.0_screenshot.png"> 
+        </div>
+      </div>
+      <div class="next"></div> 
+    </section>
+    <section class="heading">
+      <h1>TOP 5 ART</h1>
+    </section>
+    </div>
+    <section class="art">
+      <!-- <div class="art-item">
+        <div class="art-img">
+          <img src="img/hanabi.jfif" alt="" />
+          <h3 class="artists-name">test</h3>
+          <h4 class="art-name">test</h4>
+        </div> 
+      </div> -->
+    </section>
+    <section class="products">
+      <!-- <div class="product-parent">
+        <div class="product-container">
+          <p>test</p>
+          <p>test</p>
+          <div>
+            <a href="">
+              <i class="fa-regular fa-comment"></i>
+            </a>
+            <a href="">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            <a href="">
+              <i class="fa-solid fa-chart-simple"></i>
+            </a>
+          </div>
+        </div>
+        <div class="product-img">
+          <img src="./img/elen.jfif" alt="">
+        </div>
+      </div> -->
+    </section>
+    <div class="end">
+      <div class="social-link">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>
+        </a>
+          <a href="https://x.com/">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+    </div>
+      <div class="footer-head">
+          <div class="footer-logo">
+            <img src="img/image.png" alt="" />
+          </div>
+          <span>draWorld</span>
+      </div>
+      <div class="footer-info">
+        <p>Về chúng tôi</p>
+        <p>Cần trợ giúp?</p>
+        <p>Pháp lý</p>
+      </div>
+      <div class="footer-navigation">
+        <div class="footer-nav1">
+          <p><a href="">Who we are</a></p>
+          <p><a href="">Thông tin</a></p>
+          <p><a href="">Lịch sử</a></p>
+          <p><a href="">Careers</a></p>
+        </div>
+        <div class="footer-nav2">
+          <p><a href="">Câu hỏi thường gặp</a></p>
+          <p><a href="">Bản đồ trang</a></p>
+          <p><a href="">Thông tin liên hệ</a></p>
+        </div>
+        <div class="footer-nav3">
+          <p><a href="">Chính sách</a></p>
+          <p><a href="">Chính sách về Cookie</a></p>
+          <p><a href="">Điều khoản & Điều kiện</a></p>
+        </div>
+      </div>
+    </div>
+    <script
+    defer
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+  ></script>
+  <script
+    defer
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"
+  ></script>
+  <script
+    defer
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
+  ></script> 
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script defer src="./js/config.js"></script>
+    <script defer type="module" src="./js/rederdata.js"></script>
+    <script src="./js/app.js"></script>
+    <script defer type="module" src="./js/redeerdata.js"></script>
+    <script defer src="./js/index.js"></script>
+    
+  </body>
+</html>

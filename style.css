@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.divide {
+  padding-top: 45px;
+}
+.header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  height: 70px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+.header-logo {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+}
+.header-logo img {
+  width: 100%;
+}
+.header-left span {
+  color: rgb(245, 67, 215);
+  font-size: 25px;
+  font-weight: 600;
+}
+.header-search {
+  padding: 40px;
+  position: relative;
+}
+.heading {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading h1 {
+  color: rgb(245, 67, 215);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 57.6px;
+  letter-spacing: -0.9px;
+}
+#search-artists {
+  outline: none;
+  padding: 6px 15px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.header-navigation {
+  display: flex;
+}
+.header-navigation a {
+  text-decoration: none;
+  color: black;
+  margin: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+.header-navigation a:last-child {
+  display: none;
+}
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  cursor: pointer;
+}
+.art {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1300px;
+  margin: 40px auto;
+  gap: 30px;
+  cursor: pointer;
+}
+.art-item {
+  box-shadow: 0px 4px 24px 0px rgba(123, 123, 123, 0.15);
+  background-color: rgb(247, 213, 242);
+}
+.art-item:hover {
+  transform: translateY(-10px);
+}
+.art-img {
+  width: 100%;
+  background-color: #f7f8fa;
+}
+.artists-name,
+.art-name {
+  display: flex;
+  justify-content: center;
+  line-height: 26px;
+  font-size: 20px;
+}
+.art-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+.slider {
+  margin-top: 30px;
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+}
+.slider-container {
+  display: flex;
+  transition: transform 0.7s linear;
+  height: 100%;
+}
+.slider-item {
+  width: 100%;
+  flex-shrink: 0;
+}
+.mySlides {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.prev::before {
+  font-family: "FontAwesome";
+  content: "\f053";
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.next::after {
+  font-family: "FontAwesome";
+  content: "\f054";
+  right: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.product-parent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 223, 250);
+}
+.product-container,
+.product-img {
+  width: 50%;
+}
+.product-container p:first-child {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 600;
+  margin-left: 60px;
+}
+.product-container p:nth-child(2) {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+.product-container a {
+  color: black;
+}
+.product-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+.product-container i {
+  font-size: 20px;
+  margin: 30px 100px;
+  cursor: pointer;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+}
+.social-link a {
+  color: black;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.footer-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+}
+.footer-logo img {
+  width: 100%;
+}
+.footer-head span {
+  color: rgb(245, 67, 215);
+  font-size: 25px;
+  font-weight: 600;
+}
+.footer-info {
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer-navigation {
+  display: flex;
+}
+.footer-nav1 {
+  margin-left: 366px;
+}
+.footer-navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.footer-navigation p {
+  line-height: 30px;
+}
+.footer-nav2 {
+  margin-left: 130px;
+}
+.footer-nav3 {
+  margin-left: 95px;
+}
+.end {
+  padding: 40px;
+}

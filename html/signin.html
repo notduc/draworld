@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../account.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <img src="/img/background.jpg" alt="" />
+    </div>
+      <div class="signup-box">
+        <div class="account">
+          <div class="signup-box-head">
+            <div class="signup-box-logo">
+              <img src="../img/image.png" alt="" />
+            </div>
+            <span>draWorld</span>
+          </div>
+            <div class="thesign">
+              <p>SIGN IN</p>
+            </div>
+            <p class="show-error">Error</p>
+            <p class="show-success">Bạn đã đăng ký thành công</p>
+            <form id="account-form">
+              <div class="signin-bar">
+                <input
+                  class="account-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="signin-bar">
+                <div class="password-container">
+                  <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter password"/>
+                  <i class="fa-regular fa-eye toggle-password" id="togglePassword"></i>
+                  <!-- <i class="fa-regular fa-eye-slash toggle-password" id="togglePassword"></i> -->
+                </div>
+              </div>
+              <div class="signin-bar">
+                <div class="password-container">
+                  <input
+                  type="password"
+                  name="password"
+                  id="cf-password"
+                  placeholder="Correct password"
+                />
+                <i class="fa-regular fa-eye toggle-password" id="togglePassword"></i>
+                <!-- <i class="fa-regular fa-eye-slash toggle-password" id="togglePassword"></i> -->
+                </div>
+              </div>
+                <button type="submit" class="account-submit">
+                  <span class="loader"></span>
+                  <span class="text-submit">Sign up</span>
+                </button>
+              <div class="log">
+                <p>Đã có tài khoản: </p>
+                <a href="../html/login.html"> Log in</a>
+              </div>
+            </form>
+        </div>
+      </div>
+      <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
+    ></script> 
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script defer src="../js/config.js"></script>
+      <script src="../js/signin.js"></script>
+  </body>
+</html>
