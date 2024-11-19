@@ -6,9 +6,11 @@ dataArt.forEach((item, index, array) => {
     <div class="product-container">
         <p>Artists: ${item.productArtists}</p>
         <p>${item.productName}</p>
-        <i class="fa-regular fa-comment"></i>
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-chart-simple"></i>
+        <div class="modified">
+          <i class="fa-regular fa-comment"></i>
+          <i name="interaction" class="fa-regular fa-heart solid-heart"></i>
+          <i class="fa-solid fa-chart-simple"></i>
+        </div>
       </div>
       <div class="product-img">
         <img src="${item.productImg}" alt="">

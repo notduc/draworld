@@ -32,10 +32,28 @@
         <input
           type="text"
           name="search-artists"
-          id="search-artists"
+          id="searching"
           placeholder="Tìm hoạ sĩ..."
         />
         <i class="fas fa-search search-icon"></i>
+        <div class="dropdown">
+          <div class="dropdown-content">
+            <ul class="dropdown-text">
+              <li>
+                <p>oridays</p>
+                <img src="./img/moe.jpg" alt="">
+              </li>
+              <li>
+                <p>GaB</p>
+                <img src="./img/moe.jpg" alt="">
+              </li>
+              <li>
+                <p>Moe Archive</p>
+                <img src="./img/moe.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <div class="divide"></div>
@@ -52,7 +70,7 @@
           <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/1/15/Krita_5.0.0_screenshot.png"> 
         </div>
       </div>
-      <div class="next"></div> 
+      <div  class="next"></div> 
     </section>
     <section class="heading">
       <h1>TOP 5 ART</h1>
@@ -72,19 +90,11 @@
         <div class="product-container">
           <p>test</p>
           <p>test</p>
-          <div>
-            <a href="">
+          <div class="modified">
               <i class="fa-regular fa-comment"></i>
-            </a>
-            <a href="">
-              <i class="fa-regular fa-heart"></i>
-            </a>
-            <a href="">
-              <i class="fa-solid fa-heart"></i>
-            </a>
-            <a href="">
+              <a href=""><i id="heart" class="fa-regular fa-heart solid-heart"></i></a>
+              <i name="" class="fa-solid fa-heart solid-heart"></i>
               <i class="fa-solid fa-chart-simple"></i>
-            </a>
           </div>
         </div>
         <div class="product-img">
@@ -133,6 +143,7 @@
         </div>
       </div>
     </div>
+    
     <script
     defer
     src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
@@ -151,6 +162,6 @@
     <script src="./js/app.js"></script>
     <script defer type="module" src="./js/redeerdata.js"></script>
     <script defer src="./js/index.js"></script>
-    
+    <script defer src="./js/interact.js"></script>
   </body>
 </html>
