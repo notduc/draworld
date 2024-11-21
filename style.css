@@ -99,7 +99,7 @@ body {
   z-index: 1;
   cursor: pointer;
 }
-.dropdown-content li {
+.dropdown-content li a {
   color: black;
   padding: 12px 10px;
   text-decoration: none;
