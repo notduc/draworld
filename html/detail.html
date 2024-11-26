@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <div class="header-logo">
+          <img src="../img/image.png" alt="" />
+        </div>
+        <span>draWorld</span>
+      </div>
+      <ul class="header-navigation">
+        <a id="Up" href="signin.html">Đăng ký</a>
+        <a id="In" href="login.html">Đăng nhập</a>
+        <a id="house" href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <a id="logOut" href="./html/login.html">Logout</a>
+      </ul>
+      <div class="header-search">
+        <input
+          type="text"
+          name="search-artists"
+          id="searching"
+          placeholder="Tìm hoạ sĩ..."
+        />
+        <div class="dropdown">
+          <div class="dropdown-content">
+            <ul class="dropdown-text">
+              <li>
+                <a href="./detail.html">
+                  <p>oridays</p>
+                  <img src="../img/moe.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>GaB</p>
+                  <img src="../img/moe.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>Moe Archive</p>
+                  <img src="../img/moe.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>Kak</p>
+                  <img src="../img/moe.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>ATDAN</p>
+                  <img src="../img/moe.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>lovenshark</p>
+                  <img src="../img/moe.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>ドカ/DOKA</p>
+                  <img src="../img/moe.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>EMIRUUU</p>
+                  <img src="../img/moe.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>イコモチ</p>
+                  <img src="../img/moe.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>neon</p>
+                  <img src="../img/moe.jpg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"
+    ></script>
+    <script defer src="../js/config.js"></script>
+    <script defer type="module" src="../js/rederdata.js"></script>
+    <script src="../js/app.js"></script>
+    <script defer type="module" src="../js/redeerdata.js"></script>
+    <script defer src="../js/index.js"></script>
+    <script defer src="../js/interact.js"></script>
+    <script defer src="../js/list.js"></script>
+  </body>
+</html>

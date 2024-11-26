@@ -58,7 +58,7 @@ body {
 #searching {
   outline: none;
   margin-top: 20px;
-  padding: 6px 15px;
+  padding: 6px 20px;
   width: 100%;
   border-radius: 8px;
   border: 1px solid black;
@@ -77,24 +77,15 @@ body {
 .header-navigation a:last-child {
   display: none;
 }
-.search-icon {
-  position: absolute;
-  right: 15px;
-  top: 52%;
-  transform: translateY(-50%);
-  background-color: #fff;
-  cursor: pointer;
-}
 .dropdown {
   position: relative;
   display: inline-block;
 }
 .dropdown-content {
-  display: none;
+  /* display: none; */
   position: absolute;
   background-color: #f6f6f6;
   min-width: 230px;
-  border: 1px solid #ddd;
   border-radius: 5px;
   z-index: 1;
   cursor: pointer;
@@ -111,6 +102,11 @@ body {
 }
 .dropdown-content img {
   height: 50px;
+}
+.dropdown-text {
+  display: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 .dropdown-text p {
   display: flex;

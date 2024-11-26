@@ -1,5 +1,6 @@
 const In = document.querySelector("#In");
 const Up = document.querySelector("#Up");
+const house = document.querySelector("house");
 const logOut = document.querySelector("#logOut");
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
@@ -9,6 +10,7 @@ firebase.auth().onAuthStateChanged((user) => {
       In.style.display = "none";
       Up.style.display = "none";
       logOut.style.display = "block";
+      house.style.display = "block";
     }
   }
 });
@@ -20,6 +22,7 @@ logOut.addEventListener("click", () => {
       In.style.display = "block";
       Up.style.display = "block";
       logOut.style.display = "none";
+      house.style.display = "none";
     })
     .catch((error) => {
       // An error happened.
