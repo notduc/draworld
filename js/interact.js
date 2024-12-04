@@ -13,3 +13,9 @@ solidHeart.forEach((interaction) => {
     }
   });
 });
+const artItem = document.querySelectorAll(".art-item");
+artItem.forEach((transfer) => {
+  transfer.addEventListener("click", () => {
+    window.location.href = "../html/detail.html";
+  });
+});
